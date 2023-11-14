@@ -11,6 +11,6 @@ Slides: https://git.copernic.cat/garcia.dominguez.samuel/grup7_alexc_samuelg_eri
 ## Contáctame
 Estoy siempre abierto a nuevas oportunidades y colaboraciones. Si tienes un proyecto interesante en mente, ¡hablemos!
 
-    📧 Correo electrónico: alex.candelaa@gmail.com
-    💼 LinkedIn: https://www.linkedin.com/in/alex-candela-b31956228/
-    🌐 Sitio web: alexcandela.github.io
+- 📧 Correo electrónico: [alex.candelaa@gmail.com](alex.candelaa@gmail.com)
+- 💼 LinkedIn: [Alex Candela](https://www.linkedin.com/in/tu-perfil)
+- 🌐 Sitio web: [Portafolio WEB](https://alexcandela.github.io/)
