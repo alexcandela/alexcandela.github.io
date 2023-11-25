@@ -1,9 +1,6 @@
 # ¡Hola, soy Alex Candela! 👋
 
-¡Bienvenido a mi espacio digital! Soy un apasionado [desarrollador de software/diseñador web] con un amor inquebrantable por transformar ideas creativas en soluciones digitales impactantes.
-
-## Sobre mí
-Soy una persona con actitud, responsable, rigurosa, con ganas de aprender y trabajar.
+¡Bienvenido a mi espacio digital! Soy un apasionado desarrollador web con un amor inquebrantable por transformar ideas creativas en soluciones digitales impactantes.
 
 ## Proyectos destacados
 Slides: https://git.copernic.cat/garcia.dominguez.samuel/grup7_alexc_samuelg_ericp (Aplicación web para crear presentaciones con varios tipos de diapositiva y multiples diseños disponibles).
