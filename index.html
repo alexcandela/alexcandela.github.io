@@ -2,45 +2,57 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Alex Candela</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/dda3477dd5.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Alex Candela</title>
 </head>
 
 <body>
-    <div class="containerAll">
-        <div id="sobreMi" class="sobreMi">
-            <div class="sobreMiImg">
-                <img class="fotoPerfil" src="assets/img/foto2.jpg" alt="foto_alexcandela">
-            </div>
-            <div class="sobreMiContenido">
-                <div class="textoSobreMi">
-                    <h3>Alex Candela</h3>
-                    <p>Soy una persona con actitud, responsable, rigurosa, con ganas de
-                        aprender y trabajar.</p>
-                </div>
-                <div class="iconosSobreMi">
-                    <a href="http://"><img class="icono" src="assets/img/github.png" alt="github"></a>
-                    <a href="http://"><img class="icono" src="assets/img/linkedin.png" alt="linkedin"></a>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div id="experiencia" class="experiencia">
-            <h3>Experiencia</h3>
-        </div>
-        <div id="educacion" class="educacion">
-            <h3>Educación</h3>
-        </div>
-        <div id="habilidades" class="habilidades">
-            <h3>Habilidades</h3>
-        </div>
-        <div id="proyectos" class="proyectos">
-            <h3>Proyectos</h3>
-        </div>   
+  <!-- NAV -->
+  <nav>
+    <div class="contNav">
+      <ul>
+        <li><a href="#sobremi">Sobre Mí</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#educación">Educación</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#Proyectos">Proyectos</a></li>
+      </ul>
+      <button class="cvbtn">CV</button>
     </div>
-    <script src="js/scripts.js"></script>
+    <div class="divHr">
+      <hr/>
+    </div>
+  </nav>
+  <!-- TODO -->
+  <div class="containerAll">
+    <!-- SOBRE MÍ -->
+    <div class="sobremi">
+      <div class="contenidoSobreMi">
+        <h3><span>Alex</span> Candela</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          iste, dignissimos alias ducimus incidunt odit fuga dolore amet
+          dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
+          blanditiis neque.
+        </p>
+        <div class="divIconos">
+          <i class="fab fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="fotoPerfil">
+        <img src="assets/img/foto2.jpg" alt="foto_perfil">
+      </div>
+    </div>
+  </div>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
