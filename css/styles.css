@@ -8,7 +8,7 @@ html, body {
 }
 
 body{
-  background-image: linear-gradient(to bottom , #1d246e, #080e4c);
+  background-image: linear-gradient(to bottom , #1100fd, #bd229b);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@ nav a:hover::after {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #1d246e;
+  background-color: #1100fd;
   border: 2px solid #fff;
   padding: 7px 20px;
   cursor: pointer;
@@ -167,6 +167,12 @@ hr{
   font-size: 50px;
   color: #fff;
   margin: 0 20px;
+}
+
+.divIconos i:hover{
+  cursor: pointer;
+  color: #ff9b05;
+  transition: 0.5s;
 }
 
 .fotoPerfil{
