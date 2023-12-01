@@ -8,7 +8,7 @@ html, body {
 }
 
 body{
-  background-image: linear-gradient(to bottom , #1d246e, #080e4c);
+  background-image: linear-gradient(to bottom , #320280, #7a2ef5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,16 +20,20 @@ body{
 
 /* NAV */
 
-nav{
+nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   /* border: solid red 2px; */
   width: 100%;
-  padding: 25px 0;
+  margin: 50px 0;
+  padding: 10px 0;
   top: 0;
-  position: fixed;
+  position: sticky;
+  z-index: 1000;
+  background-color: rgba(50, 2, 128, 0.9);
+  
 }
 
 a{
@@ -65,14 +69,17 @@ nav li{
 nav a {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   position: relative;
   font-weight: bold;
   letter-spacing: 1px;
   top: 0;
 }
-
+nav a:hover{
+  color: #ff9b05;
+  transition: 0.5s;
+}
 
 nav a::after {
   content: '';
@@ -80,7 +87,7 @@ nav a::after {
   bottom: -5px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transform-origin: center;
   transform: scaleX(0);
@@ -91,6 +98,12 @@ nav a:hover::after {
   transform: scaleX(1);
 }
 
+/* .contNav{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+} */
+
 .cvbtn {
   margin: 0 10px;
   font-family: 'Montserrat', sans-serif;
@@ -98,7 +111,7 @@ nav a:hover::after {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #1d246e;
+  background-color: transparent;
   border: 2px solid #fff;
   padding: 7px 20px;
   cursor: pointer;
@@ -108,14 +121,14 @@ nav a:hover::after {
 
 .cvbtn:hover {
   background-color: #fff;
-  color: #1d246e;
+  color: #320280;
   transform: scale(1.05);
-  border-color: #1d246e;
   box-shadow: 0 0 10px rgba(29, 36, 110, 0.5);
 }
 
 hr{
   width: 95%;
+  color: #fff;
 }
 
 /* CONTENEDOR DE TODO */
@@ -124,6 +137,10 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  /* border: solid red 2px; */
+  max-width: 900px;
+  margin-top: 400px;
 }
 
 /* SOBRE MÍ */
@@ -132,13 +149,14 @@ hr{
   display: flex;
   justify-content: center;
   /* border: solid red 2px; */
-  max-width: 900px;
+  padding-bottom: 200px;
 }
 
 .contenidoSobreMi{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* border: solid red 2px; */
 }
 
 .contenidoSobreMi h3 span{
@@ -148,13 +166,13 @@ hr{
 .contenidoSobreMi h3{
   color: #fff;
   font-family: 'Oswald', sans-serif;
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .contenidoSobreMi p{
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .divIconos{
@@ -167,6 +185,12 @@ hr{
   font-size: 50px;
   color: #fff;
   margin: 0 20px;
+}
+
+.divIconos i:hover{
+  cursor: pointer;
+  color: #ff9b05;
+  transition: 0.5s;
 }
 
 .fotoPerfil{
@@ -182,6 +206,36 @@ hr{
 
 /* EXPERIENCIA */
 
+.experiencia{
+  display: flex;
+  justify-content: center;
+  /* border: solid red 2px; */
+}
+
+.contenidoExperiencia{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* border: solid red 2px; */
+}
+
+.contenidoExperiencia h3{
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+}
+
+.contenidoExperiencia h5{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.contenidoExperiencia p{
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
 
 /* EDUCACIÓN */
 
