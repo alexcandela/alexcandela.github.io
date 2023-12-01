@@ -8,7 +8,7 @@ html, body {
 }
 
 body{
-  background-image: linear-gradient(to bottom , #320280, #7a2ef5);
+  background-image: linear-gradient(to bottom , #1d246e, #080e4c);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,7 @@ nav a:hover::after {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: transparent;
+  background-color: #1d246e;
   border: 2px solid #fff;
   padding: 7px 20px;
   cursor: pointer;
