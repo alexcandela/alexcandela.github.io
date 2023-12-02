@@ -8,7 +8,8 @@ html, body {
 }
 
 body{
-  background-image: linear-gradient(to bottom , #1d246e, #080e4c);
+  /* background: linear-gradient(to right, #3494e6, #ec6ead); */
+  background: linear-gradient(to right, #00053a, #3442dd);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,14 +26,13 @@ nav {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   /* border: solid red 2px; */
   width: 100%;
-  margin: 50px 0;
-  padding: 10px 0;
+  padding: 25px 0 5px 0;
   top: 0;
-  position: sticky;
-  z-index: 1000;
-  background-color: rgba(50, 2, 128, 0.9);
+  position: fixed;
+  background: linear-gradient(to right, #00053a, #3442dd);
   
 }
 
@@ -111,7 +111,7 @@ nav a:hover::after {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  background-color: #1d246e;
+  background-color: transparent;
   border: 2px solid #fff;
   padding: 7px 20px;
   cursor: pointer;
@@ -135,28 +135,42 @@ hr{
 
 .containerAll{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   /* border: solid red 2px; */
-  max-width: 900px;
-  margin-top: 400px;
+  max-width: 1100px;
+  margin-top: 500px;
+  margin-bottom: 50px;
+  
 }
 
 /* SOBRE MÍ */
+.contenido{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* border: solid red 2px; */
+}
 
 .sobremi{
   display: flex;
   justify-content: center;
   /* border: solid red 2px; */
-  padding-bottom: 200px;
+  
 }
 
-.contenidoSobreMi{
+.experiencia{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   /* border: solid red 2px; */
+  
+}
+
+.educacion{
+  display: flex;
+  justify-content: center;
+  /* border: solid red 2px; */  
 }
 
 .contenidoSobreMi h3 span{
