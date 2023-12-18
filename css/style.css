@@ -1,0 +1,225 @@
+/* Reset de estilos */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background: linear-gradient(to right, #00053a, #3442dd);
+  padding-top: 70px;
+}
+
+.containerAll {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navegación */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #00053a, #3442dd);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.contNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+a {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #ff9b05;
+  transition: 0.6s;
+}
+
+/* Secciones */
+.sobremi {
+  margin-top: 18%;
+  /* border: solid red 2px; */
+}
+
+.sobremi,
+.experiencia,
+.educacion,
+.habilidades,
+.proyectos {
+  padding: 30px;
+  margin-bottom: 50%;
+}
+
+/* Contenido */
+h3 {
+  font-size: 80px;
+  color: #ff9b05;
+  margin-bottom: 15px;
+  font-family: "Outfit", sans-serif;
+}
+h3 span {
+  color: #fff;
+}
+
+h5 {
+  color: #ff9b05;
+  font-size: 25px;
+  margin-top: 15px;
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  /* margin-bottom: 20px; */
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+/* Botón CV */
+.cvbtn {
+  margin: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.cvbtn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(29, 36, 110, 0.5);
+}
+
+/* Línea divisoria */
+.divHr {
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+  border: 1px solid #ccc;
+}
+
+.sobremi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contenidoSobreMi {
+  width: calc(
+    70% - 20px
+  ); /* Ajuste para dar espacio entre el contenido y la imagen */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Iconos sociales */
+.divIconos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* border: solid red 2px; */
+}
+
+.fa-github,
+.fa-linkedin {
+  font-size: 50px;
+  margin-right: 20px;
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+  color: #ff9b05;
+}
+
+.fotoPerfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: calc(30% - 20px); /* Ajuste para dar espacio entre la imagen y el borde derecho */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.fotoPerfil img {
+  max-width: 100%; /* Asegura que la imagen sea responsive y no exceda el contenedor */
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Proyectos */
+.contenidoProyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+  .contNav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
