@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -10,162 +11,146 @@
       crossorigin="anonymous"
     ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/estilov2.css" />
     <title>Alex Candela</title>
   </head>
-
   <body>
-    <!-- NAV -->
-    <nav>
-      <div class="contNav">
-        <ul>
-          <li><a href="#sobremi">SOBRE MÍ</a></li>
-          <li><a href="#experiencia">EXPERIENCIA</a></li>
-          <li><a href="#educacion">EDUCACIÓN</a></li>
-          <li><a href="#habilidades">HABILIDADES</a></li>
-          <li><a href="#proyectos">PROYECTOS</a></li>
-        </ul>
-        <button class="cvbtn">CV</button>
+    <header class="header">
+      <div class="header-nombre">
+        <i class="fa-solid fa-circle-user"></i>
+        <h1>Alex Candela</h1>
       </div>
-      <div class="divHr">
-        <hr />
+      <div class="header-nav">
+        <div class="header-nav-contenido">
+          <a href="">Sobre Mí</a>
+          <a href="">Proyectos</a>
+          <a href="">Experiencía</a>
+        </div>
       </div>
-    </nav>
-    <!-- TODO -->
-    <div class="containerAll">
-      <!-- SOBRE MÍ -->
-      <div id="sobremi" class="sobremi">
-        <div class="contenidoSobreMi">
-          <h3><span>Alex</span> Candela</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <div class="divIconos">
-            <a href="https://github.com/alexcandela" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/alex-candela-b31956228/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+    </header>
+    <main class="all">
+      <div class="sobreMi">
+        <div class="sobreMi-info">
+          <div class="sobreMi-info-content">
+            <div class="presentacion">
+              <p>Hola, soy <span>Alex</span></p>
+            </div>
+            <div class="desc">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, eligendi itaque reiciendis illo debitis animi veniam
+                accusantium odit obcaecati fugit asperiores optio id cupiditate,
+                repudiandae quam laboriosam sint labore quod.
+              </p>
+            </div>
+            <div class="contact">
+              <a class="contact-icon" href=""
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a class="contact-icon" href=""
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a class="contact-icon" href=""
+                ><i class="fa-brands fa-gitlab"></i
+              ></a>
+              <button class="contact-cv">CV</button>
+            </div>
           </div>
         </div>
-        <div class="fotoPerfil">
-          <img src="assets/img/foto2.jpg" alt="foto_perfil" />
+        <div class="sobreMi-img">
+          <img
+            src="https://www.shutterstock.com/image-vector/default-profile-picture-avatar-photo-600nw-1725917284.jpg"
+            alt=""
+          />
         </div>
       </div>
-      <div id="experiencia" class="experiencia">
-        <div class="contenido contenidoExperiencia">
-          <h3>Experiencia</h3>
-          <h5>· Jotun Ibérica</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>· Recalvi</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>· Zeleris</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
+      <div class="proyectos">
+        <div class="proyectos-proyecto slides">
+          <div class="infoProyecto">
+            <div class="infoProyecto-txt">
+              <label>Slides</label>
+              <p>Proyecto que permite crear presentaciones.</p>
+            </div>
+            <div class="infoProyecto-icono">
+              <a href="http://"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="fotosProyectos">
+            <img
+              src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="proyectos-proyecto eventium">
+          <div class="infoProyecto">
+            <div class="infoProyecto-txt">
+              <label>Eventium</label>
+              <p>Aplicación web de eventos.</p>
+            </div>
+            <div class="infoProyecto-icono">
+              <a href="http://"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="fotosProyectos">
+            <img
+              src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-      <div id="educacion" class="educacion">
-        <div class="contenido contenidoEducacion">
-          <h3>Educación</h3>
-          <h5>Sistemas Microinformáticos y Redes - CFGM</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>Gráfica Publicitaria - CFGS</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>Desarrollo de Aplicaciones WEB - CFGS</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
+      <div class="tecnologias">
+        <div class="techTitulo">
+          <label>Tecnologías</label>
+        </div>
+        <div class="techListado">
+          <div class="tech">
+            <i class="fa-brands fa-php"></i>
+          </div>
+          <div class="tech">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="tech">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="tech">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="tech">
+            <i class="fa-brands fa-sass"></i>
+          </div>
+          <div class="tech">
+            <i class="fa-brands fa-laravel"></i>
+          </div>
+          <div class="tech">
+            <i class="fa-brands fa-gitlab"></i>
+          </div>
+          <div class="tech">
+            <i class="fa-brands fa-github"></i>
+          </div>
         </div>
       </div>
-      <div id="habilidades" class="habilidades">
-        <div class="contenido contenidoHabilidades">
-          <h3>Habilidades</h3>
-          <h5>Sistemas Microinformáticos y Redes - CFGM</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>Gráfica Publicitaria - CFGS</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>Desarrollo de Aplicaciones WEB - CFGS</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
+      <div class="experiencia">
+        <div class="holzadacTitulo">
+          <h3>Holzadac</h3>
         </div>
-      </div>
-      <div id="proyectos" class="proyectos">
-        <div class="contenido contenidoProyectos">
-          <h3>Proyectos</h3>
-          <h5>Sistemas Microinformáticos y Redes - CFGM</h5>
+        <div class="holzadac">
+          <h3>Desarrolador Web</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>Gráfica Publicitaria - CFGS</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
-          </p>
-          <h5>Desarrollo de Aplicaciones WEB - CFGS</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            iste, dignissimos alias ducimus incidunt odit fuga dolore amet
-            dolorum minus ea! Voluptatem, labore in. Hic soluta quos sapiente
-            blanditiis neque.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Dignissimos voluptates, exercitationem minima molestiae mollitia
+            laudantium, illo, in vel similique assumenda voluptate fugit. Dicta
+            quaerat mollitia expedita optio accusamus distinctio repellendus!
           </p>
         </div>
       </div>
-    </div>
-    <script src="js/scripts.js"></script>
+    </main>
   </body>
 </html>
