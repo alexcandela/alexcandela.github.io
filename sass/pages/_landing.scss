@@ -1,0 +1,271 @@
+/* MAIN */
+.all {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 15px;
+  gap: 10px;
+}
+
+/* PRESENTACIÓN */
+
+.sobreMi {
+  /* border: solid red; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+
+  &-info {
+    position: relative; /* Necesario para que el efecto de glassmorphism funcione correctamente */
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(asset/7863053.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    /* border: solid red; */
+    border-radius: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+      ); /* Ajusta el color y la opacidad del efecto de glassmorphism */
+      backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque */
+      border-radius: 10px;
+    }
+    &-content {
+      position: relative;
+      z-index: 1;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto auto;
+      gap: 10px;
+      /* Define estilos para los elementos hijos según sea necesario */
+      .presentacion {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 20px;
+        p {
+          font-size: 40px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          span {
+            color: #cf0091;
+            font-size: 50px;
+            font-weight: 700;
+          }
+        }
+        i {
+          font-size: 35px;
+        }
+      }
+      .desc {
+        p {
+          font-size: 20px;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        &-icon {
+          margin: 5px;
+          text-decoration: none;
+          font-family: "Poppins", sans-serif;
+          font-size: 40px;
+          font-weight: 500;
+          border-radius: 5px;
+          padding: 5px 10px;
+          color: black;
+        }
+      }
+    }
+  }
+  &-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    // border: solid red;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+/* FIN PRESENTACIÓN */
+
+/* PROYECTOS */
+
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+
+  a {
+    color: black;
+  }
+  &-proyecto {
+    border-radius: 10px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+  }
+  .slides {
+    background-color: #b700ff;
+    color: white;
+  }
+  
+  .eventium {
+    background-color: #ecd500;
+  }
+  .infoProyecto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    
+      label {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+      }
+    
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    &-icono {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      border-radius: 50%;
+      i {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+  .fotosProyectos {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 70%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+}
+/* FIN PROYECTOS */
+
+/* TECNOLOGÍAS */
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  &-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    border-radius: 5px;
+    padding: 10px 0;
+  
+    label {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 35px;
+    }
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+    &-tech {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    
+      i {
+        font-size: 100px;
+        /* color: white; */
+      }
+    }
+  }
+}
+
+
+
+
+.amarillo {
+  color: #ecd500;
+}
+.rojo {
+  color: red;
+}
+
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding: 20px 0;
+  &-holzadacTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #00aff5;
+    border-radius: 10px;
+  
+    h3 {
+      font-size: 50px;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+    }
+  }
+  &-holzadac {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #00aff5;
+    padding: 20px;
+    border-radius: 10px;
+  
+    h3 {
+      font-size: 25px;
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+  }
+}
+
+

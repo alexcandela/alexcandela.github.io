@@ -1,0 +1,48 @@
+/* HHEADER */
+.header {
+  /* border: solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  padding: 10px 0;
+
+  &-nombre {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 20px;
+
+    i {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin: 0 10px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+    }
+  }
+  &-nav {
+    /* border: solid red; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    &-contenido {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 50px;
+      a {
+        /* border: solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+/* Fin HEADER */
