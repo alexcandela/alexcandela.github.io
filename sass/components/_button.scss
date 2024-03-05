@@ -1,13 +1,22 @@
 .btn {
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-family: $fuente;
-    font-size: 20px;
-    cursor: pointer;
-    &-cv {
-        background-color: black;
-        color: white;
-        font-weight: 600;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px; /* Aumentar el espacio de relleno para un aspecto más espaciado */
+  font-family: $fuente;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none; /* Eliminar el subrayado predeterminado */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  &-cv {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      background-color: white; /* Cambiar el color de fondo en hover */
+      color: black;
+    //   border: solid 2px black;
     }
+  }
 }

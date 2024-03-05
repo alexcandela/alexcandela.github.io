@@ -9,17 +9,25 @@ body {
 }
 
 .btn {
+  display: inline-block;
   border: none;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 20px; /* Aumentar el espacio de relleno para un aspecto más espaciado */
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   cursor: pointer;
+  text-decoration: none; /* Eliminar el subrayado predeterminado */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .btn-cv {
   background-color: black;
   color: white;
-  font-weight: 600;
+  font-weight: bold;
+}
+.btn-cv:hover {
+  background-color: white; /* Cambiar el color de fondo en hover */
+  color: black;
 }
 
 /* HHEADER */
@@ -53,7 +61,7 @@ body {
 }
 .header-nav-contenido {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 0 50px;
 }
 .header-nav-contenido a {
@@ -65,8 +73,87 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 0 10px;
 }
+.header-nav-contenido .ing {
+  display: none;
+}
 
 /* Fin HEADER */
+.idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.idioma-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Texto dentro del interruptor */
+.slider:before {
+  content: "ES";
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input:checked + .slider:before {
+  content: "EN";
+}
+
+/* Estilos adicionales */
+.switch {
+  margin-right: 10px; /* Espacio entre interruptores */
+}
+
 .footer {
   background-color: black;
   margin-top: 10px;
@@ -80,6 +167,10 @@ body {
   grid-template-rows: repeat(3, 1fr);
   margin: 0 15px;
   gap: 10px;
+}
+
+.sombra {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* PRESENTACIÓN */
@@ -96,7 +187,6 @@ body {
   background-image: url(asset/7863053.jpg);
   background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
   background-position: center; /* Centra la imagen de fondo */
-  /* border: solid red; */
   border-radius: 20px;
 }
 .sobreMi-info::before {
@@ -106,7 +196,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5); /* Ajusta el color y la opacidad del efecto de glassmorphism */
+  background-color: rgba(255, 255, 255, 0.8); /* Ajusta el color y la opacidad del efecto de glassmorphism */
   backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque */
   border-radius: 10px;
 }
@@ -116,8 +206,9 @@ body {
   padding: 50px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto auto;
+  grid-template-rows: auto 1fr 1fr;
   gap: 10px;
+  border-radius: 10px;
   /* Define estilos para los elementos hijos según sea necesario */
 }
 .sobreMi-info-content .presentacion {
@@ -127,20 +218,20 @@ body {
   gap: 20px;
 }
 .sobreMi-info-content .presentacion p {
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 .sobreMi-info-content .presentacion p span {
-  color: #cf0091;
-  font-size: 50px;
+  color: #0084ff;
+  font-size: 70px;
   font-weight: 700;
 }
 .sobreMi-info-content .presentacion i {
-  font-size: 35px;
+  font-size: 45px;
 }
 .sobreMi-info-content .desc p {
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Poppins", sans-serif;
 }
 .sobreMi-info-content .contact {
@@ -157,14 +248,20 @@ body {
   padding: 5px 10px;
   color: black;
 }
+.sobreMi-info-content .contact-icon:hover {
+  transition: 0.5s ease-in-out;
+  scale: 1.3;
+}
 .sobreMi-img {
   display: grid;
   grid-template-columns: 1fr;
+  border-radius: 10px;
 }
 .sobreMi-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 /* FIN PRESENTACIÓN */
@@ -187,11 +284,11 @@ body {
   gap: 20px;
 }
 .proyectos .slides {
-  background-color: #b700ff;
+  background: linear-gradient(to bottom, #d400ff, #6a0180);
   color: white;
 }
 .proyectos .eventium {
-  background-color: #ecd500;
+  background: linear-gradient(to bottom, #ffe710, #ad9e10);
 }
 .proyectos .infoProyecto {
   display: flex;
@@ -220,21 +317,22 @@ body {
   align-items: center;
   padding: 15px;
   border-radius: 50%;
+  border: solid black 2px;
+  cursor: pointer;
 }
 .proyectos .infoProyecto-icono i {
   font-size: 25px;
   font-weight: 600;
 }
-.proyectos .fotosProyectos {
+.proyectos .videoProyecto {
   /* border: solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.proyectos .fotosProyectos img {
-  width: 70%;
+.proyectos .videoProyecto iframe {
+  border: solid black 2px;
   border-radius: 10px;
-  object-fit: cover;
 }
 
 /* FIN PROYECTOS */
@@ -243,67 +341,65 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 .tecnologias-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid black;
-  border-radius: 5px;
-  padding: 10px 0;
+  background-color: #f0f0f0;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px 20px;
 }
 .tecnologias-titulo label {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 24px;
 }
 .tecnologias-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  place-items: center;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
 }
 .tecnologias-list-tech {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
   border-radius: 10px;
+  padding: 20px;
+  text-align: center;
 }
 .tecnologias-list-tech i {
   font-size: 100px;
-  /* color: white; */
-}
-
-.amarillo {
-  color: #ecd500;
-}
-
-.rojo {
-  color: red;
+  color: #333333;
 }
 
 .experiencia {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
   padding: 20px 0;
 }
-.experiencia-holzadacTitulo {
+.experiencia-jotun {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+.experiencia-jotun-titulo {
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid #00aff5;
   border-radius: 10px;
 }
-.experiencia-holzadacTitulo h3 {
-  font-size: 50px;
+.experiencia-jotun-titulo h3 {
+  font-size: 60px;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-.experiencia-holzadac {
+.experiencia-jotun-desc {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -311,14 +407,52 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-.experiencia-holzadac h3 {
-  font-size: 25px;
+.experiencia-jotun-desc h3 {
+  font-size: 35px;
   font-family: "Poppins", sans-serif;
   color: white;
 }
-.experiencia-holzadac p {
+.experiencia-jotun-desc p {
   font-family: "Poppins", sans-serif;
   color: white;
+}
+.experiencia-holzadac {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+.experiencia-holzadac-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #00aff5;
+  border-radius: 10px;
+}
+.experiencia-holzadac-titulo h3 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.experiencia-holzadac-desc {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #00aff5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.experiencia-holzadac-desc h3 {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.experiencia-holzadac-desc p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.ing {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

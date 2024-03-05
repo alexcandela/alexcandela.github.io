@@ -1,134 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/dda3477dd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alex Candela</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <script src="https://kit.fontawesome.com/dda3477dd5.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <title>Alex Candela</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-nombre">
-      <i class="fa-solid fa-circle-user"></i>
-      <h1>Alex Candela</h1>
-    </div>
-    <div class="header-nav">
-      <div class="header-nav-contenido">
-        <a href="">Sobre Mí</a>
-        <a href="">Proyectos</a>
-        <a href="">Experiencía</a>
+  <body>
+    <header class="header">
+      <div class="header-nombre">
+        <i class="fa-solid fa-circle-user"></i>
+        <h1>Alex Candela</h1>
       </div>
-    </div>
-  </header>
-  <main class="all">
-    <div class="sobreMi">
-      <div class="sobreMi-info">
-        <div class="sobreMi-info-content">
-          <div class="presentacion">
-            <p>Hola, soy <span>Alex</span></p>
-            <i class="fa-solid fa-hand"></i>
+
+      <div class="header-nav">
+        <div class="idioma">
+          <label class="idioma-text">Es</label>
+          <label class="switch">
+            <input id="idioma" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <label class="idioma-text">En</label>
+        </div>
+        <div class="header-nav-contenido">
+          <a class="esp" href="">Sobre Mí</a>
+          <a class="esp" href="">Proyectos</a>
+          <a class="esp" href="">Experiencía</a>
+          <a class="ing" href="">About me</a>
+          <a class="ing" href="">My Projects</a>
+          <a class="ing" href="">Experience</a>
+        </div>
+      </div>
+    </header>
+    <main class="all">
+      <div class="sobreMi">
+        <div class="sobreMi-info">
+          <div class="sobreMi-info-content sombra">
+            <div class="presentacion">
+              <p class="esp">Hola, soy <span>Alex</span></p>
+              <p class="ing">Hello, im <span>Alex</span></p>
+              <i class="fa-solid fa-hand"></i>
+            </div>
+            <div class="desc">
+              <p class="esp">
+                Soy un apasionado por el desarrollo web, con una mentalidad
+                rigurosa y una actitud proactiva. Busco constantemente crecer
+                profesionalmente y contribuir al éxito de equipos dinámicos.
+              </p>
+              <p class="ing">
+                I am passionate about web development, with a rigorous mindset
+                and a proactive attitude. I am constantly seeking professional
+                growth and strive to contribute to the success of dynamic teams.
+              </p>
+            </div>
+            <div class="contact">
+              <a
+                class="contact-icon btn-icon"
+                href="https://www.linkedin.com/in/alex-candela-b31956228/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                class="contact-icon btn-icon"
+                href="https://github.com/alexcandela"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                class="contact-icon btn-icon"
+                href="https://git.copernic.cat/rcandela"
+                ><i class="fa-brands fa-gitlab"></i
+              ></a>
+              <a
+                class="btn btn-cv"
+                href="https://drive.google.com/drive/u/0/folders/1W-oJjVBrY7aXx1EdwJjBRkAKOuPtN15v"
+                >CV</a
+              >
+            </div>
           </div>
-          <div class="desc">
-            <p>
-              Soy un apasionado/a por el desarrollo web, con una mentalidad rigurosa y una actitud proactiva.
-              Busco constantemente crecer profesionalmente y contribuir al éxito de equipos dinámicos.
+        </div>
+        <div class="sobreMi-img sombra">
+          <img src="asset/foto2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="proyectos">
+        <div class="proyectos-proyecto slides sombra">
+          <div class="infoProyecto">
+            <div class="infoProyecto-txt">
+              <label>Slides</label>
+              <p class="esp">Proyecto que permite crear presentaciones.</p>
+              <p class="ing">Project that allows creating presentations.</p>
+            </div>
+            <div class="infoProyecto-icono">
+              <a
+                href="https://git.copernic.cat/garcia.dominguez.samuel/grup7_alexc_samuelg_ericp"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="videoProyecto">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Ly9LtKUylfQ?si=aX7KEbKDENXPhOb6"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="proyectos-proyecto eventium sombra">
+          <div class="infoProyecto">
+            <div class="infoProyecto-txt">
+              <label>Eventium</label>
+              <p class="esp">Aplicación web de eventos.</p>
+              <p class="ing">Web application for events.</p>
+            </div>
+            <div class="infoProyecto-icono">
+              <a
+                href="https://git.copernic.cat/rcandela/gr05-perez-garcia-candela"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="videoProyecto">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/IEj1uqlGZK0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="tecnologias">
+        <div class="tecnologias-titulo">
+          <label class="esp">Tecnologías</label>
+          <label class="ing">Technologies</label>
+        </div>
+        <div class="tecnologias-list">
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-php"></i>
+          </div>
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-sass"></i>
+          </div>
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-laravel"></i>
+          </div>
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-gitlab"></i>
+          </div>
+          <div class="tecnologias-list-tech">
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+      </div>
+      <div class="experiencia">
+        <div class="experiencia-jotun">
+          <div class="experiencia-jotun-desc sombra">
+            <h3 class="esp">Técnico Informático</h3>
+            <h3 class="ing">Computer Technician</h3>
+            <p class="esp">
+              En Jotun, ocupé el puesto de técnico informático, donde me
+              encargaba de resolver problemas tanto de software como de
+              hardware. Mi labor consistía en diagnosticar y solucionar
+              incidencias tecnológicas, garantizando el funcionamiento óptimo de
+              los equipos y sistemas informáticos de la empresa.
+            </p>
+            <p class="ing">
+              At Jotun, I held the position of computer technician, where I was
+              responsible for resolving both software and hardware issues. My
+              duties included diagnosing and troubleshooting technological
+              incidents, ensuring the optimal functioning of the company's
+              computer equipment and systems.
             </p>
           </div>
-          <div class="contact">
-            <a class="contact-icon btn-icon" href="https://www.linkedin.com/in/alex-candela-b31956228/"><i class="fa-brands fa-linkedin"></i></a>
-            <a class="contact-icon btn-icon" href="https://github.com/alexcandela"><i class="fa-brands fa-github"></i></a>
-            <a class="contact-icon btn-icon" href="https://git.copernic.cat/rcandela"><i class="fa-brands fa-gitlab"></i></a>
-            <button class="btn btn-cv">CV</button>
+          <div class="experiencia-jotun-titulo sombra">
+            <h3>Jotun</h3>
+          </div>
+        </div>
+        <div class="experiencia-holzadac">
+          <div class="experiencia-holzadac-titulo sombra">
+            <h3>Holzadac</h3>
+          </div>
+          <div class="experiencia-holzadac-desc sombra">
+            <h3 class="esp">Desarrolador Web</h3>
+            <h3 class="ing">Web Developer</h3>
+            <p class="esp">
+              En Holzadac, trabajé como diseñador y desarrollador web utilizando
+              WordPress. Mi trabajo incluía crear diseños personalizados,
+              implementar plugins para cursos y tiendas, garantizar la seguridad
+              y optimizar el rendimiento de los sitios. Logré mejorar la
+              experiencia del usuario y contribuir al éxito de varios proyectos
+              web.
+            </p>
+            <p class="ing">
+              At Holzadac, I worked as a web designer and developer using
+              WordPress. My responsibilities included creating custom designs,
+              implementing plugins for courses and stores, ensuring security,
+              and optimizing site performance. I succeeded in enhancing user
+              experience and contributing to the success of various web
+              projects.
+            </p>
           </div>
         </div>
       </div>
-      <div class="sobreMi-img">
-        <img src="asset/foto2.jpg" alt="" />
-      </div>
-    </div>
-    <div class="proyectos">
-      <div class="proyectos-proyecto slides">
-        <div class="infoProyecto">
-          <div class="infoProyecto-txt">
-            <label>Slides</label>
-            <p>Proyecto que permite crear presentaciones.</p>
-          </div>
-          <div class="infoProyecto-icono">
-            <a href="http://"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="fotosProyectos">
-          <img src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg" alt="" />
-        </div>
-      </div>
-      <div class="proyectos-proyecto eventium">
-        <div class="infoProyecto">
-          <div class="infoProyecto-txt">
-            <label>Eventium</label>
-            <p>Aplicación web de eventos.</p>
-          </div>
-          <div class="infoProyecto-icono">
-            <a href="http://"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="fotosProyectos">
-          <img src="https://climate.onep.go.th/wp-content/uploads/2020/01/default-image.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="tecnologias">
-      <div class="tecnologias-titulo">
-        <label>Tecnologías</label>
-      </div>
-      <div class="tecnologias-list">
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-php"></i>
-        </div>
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-js"></i>
-        </div>
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-html5"></i>
-        </div>
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-css3-alt"></i>
-        </div>
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-sass"></i>
-        </div>
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-laravel"></i>
-        </div>
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-gitlab"></i>
-        </div>
-        <div class="tecnologias-list-tech">
-          <i class="fa-brands fa-github"></i>
-        </div>
-      </div>
-    </div>
-    <div class="experiencia">
-      <div class="experiencia-holzadacTitulo">
-        <h3>Holzadac</h3>
-      </div>
-      <div class="experiencia-holzadac">
-        <h3>Desarrolador Web</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Dignissimos voluptates, exercitationem minima molestiae mollitia
-          laudantium, illo, in vel similique assumenda voluptate fugit. Dicta
-          quaerat mollitia expedita optio accusamus distinctio repellendus!
-        </p>
-      </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>

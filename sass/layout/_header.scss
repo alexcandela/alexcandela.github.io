@@ -30,7 +30,7 @@
     align-items: center;
     &-contenido {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       padding: 0 50px;
       a {
         /* border: solid red; */
@@ -41,8 +41,87 @@
         font-family: "Poppins", sans-serif;
         padding: 0 10px;
       }
+      .ing {
+        display: none;
+      }
     }
   }
 }
 
 /* Fin HEADER */
+
+.idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-text {
+    font-family: $fuente;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Texto dentro del interruptor */
+.slider:before {
+  content: "ES";
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input:checked + .slider:before {
+  content: "EN";
+}
+
+/* Estilos adicionales */
+.switch {
+  margin-right: 10px; /* Espacio entre interruptores */
+}
